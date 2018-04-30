@@ -1,0 +1,116 @@
+body{
+	margin:0px;
+	padding:0px;
+	line-height:24px;
+}
+.head{
+	background:#2ecc71;
+	width:100%;
+	position:relative;
+}
+.head:after{
+	display:block;
+	content:'';
+	clear:both;
+}
+.hamberger{
+	display:none;
+}
+
+.logo{
+	width:30%;
+	float:left;
+}
+.nevigaiton{
+	width:70%;
+	float:left;
+}
+.nevigaiton ul{
+	list-style:none;
+	
+	padding:10px 0px;
+	text-align:right;
+}
+.nevigaiton ul li{
+	display:inline-block;
+	position:relative;
+}
+.nevigaiton ul li a{
+	text-decoration:none;
+	display:block;
+	font-size:25px;
+	padding:20px;
+}
+.nevigaiton ul ul{
+	display:none;
+	position:absolute;	
+	top:100%;
+	left:0%;
+	text-align:left;
+	width:100px;
+	background:yellow;
+}
+.nevigaiton ul ul li{
+	display:block;
+}
+
+.totop{
+	background:rgba(0,0,0,.5);
+	display:none;
+	width:50px;
+	height:40px;
+	position:fixed;
+	bottom:50px;
+	right:40px;
+	border-radius:8px;
+	text-align:center;
+	color:white;
+	font-size:30px;
+}
+
+.drag{
+	width:100px;
+	height:100px;
+	background:red;
+}
+
+
+@media all and (max-width:769px){
+	
+	.nevigaiton {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0%;
+	width:100%;
+	background:#1abc9c;
+}
+.nevigaiton ul {
+	text-align:left;
+	
+}
+.nevigaiton ul li{
+	display:block;
+}
+	.hamberger{
+	display:block;
+	float:right;
+	padding:20px;
+}
+.hamberger a{
+	font-size:30px;
+}
+
+.nevigaiton ul ul {
+    display: none;
+    position: initial;
+    top: 100%;
+    left: 0%;
+    text-align: left;
+    width: 100px;
+    background: yellow;
+    width: 100%;
+}
+
+
+}
